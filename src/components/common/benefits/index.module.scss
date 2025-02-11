@@ -1,0 +1,44 @@
+.benefits {
+    border: 1px solid #E4E7E9;
+    margin-bottom: 48px;
+    &_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 16px;
+    }
+    @media (max-width: 1025px) {
+        display: none;;
+    }
+}
+.benefit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    max-width: 280px;
+
+    border-right: 1px solid #E4E7E9;
+
+    &_info {
+        h3 {
+            color: #191C1F;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 4px;   
+        }
+        p {
+            color: #5F6C72;
+            font-size: 14px;
+        }
+    }
+
+    &:last-of-type {
+        border-right: none;
+    }
+}
+
+.icon {
+    margin-right: 16px;
+}

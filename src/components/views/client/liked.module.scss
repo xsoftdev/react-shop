@@ -1,0 +1,132 @@
+.bordered_container {
+    border: 1px solid #E4E7E9;
+    margin-bottom: 120px;
+    padding: 0;
+}
+
+.title {
+    padding: 20px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid #E4E7E9;
+}
+
+.info_bar {
+    padding: 10px 24px;
+    background: #E4E7E9;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+
+    p {
+        color: #475156;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    @media (max-width: 768px) {
+        display: none; // Убираем инфо-бар на мобильных
+    }
+}
+
+.items {
+    padding: 20px 24px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 12px;
+    border-bottom: 1px solid #E4E7E9;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; 
+        gap: 12px;
+        padding: 16px;
+    }
+}
+
+.product {
+    &_photo {
+        width: 72px;
+        height: 72px;
+        margin-right: 16px;
+
+        @media (max-width: 768px) {
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    &_name {
+        max-width: 420px;
+        font-size: 14px;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            max-width: 100%;
+        }
+    }
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    button {
+        background: #FA8232;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 12px 8px;
+        margin-right: 16px;
+        cursor: pointer;
+
+        p {
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+    }
+
+    .remove {
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        justify-content: space-between;
+    }
+}
+
+.price {
+    display: flex;
+    gap: 12px;
+    
+    stroke {
+        text-decoration: line-through;
+        color: #929FA5;
+    }
+
+    p {
+        font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: row;
+        justify-content: right;
+    }
+}
+
+.status {
+    font-weight: 600;
+    color: #2DB224;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        text-align: right;
+    }
+}

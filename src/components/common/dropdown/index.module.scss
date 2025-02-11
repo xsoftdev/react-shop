@@ -1,0 +1,27 @@
+.Button {
+
+    padding: 12px 24px;
+
+    border-radius: 2px;
+    background: #F2F4F5;
+    border: none;
+    outline: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+        color: #191C1F;
+        font-size: 18px;
+        margin-right: 8px;
+    }
+
+}
+.dropdown {
+    position: relative;
+    &_content {
+        position: absolute;
+        z-index: 10;
+    }
+}

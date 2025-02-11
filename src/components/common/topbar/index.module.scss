@@ -1,0 +1,40 @@
+.TopBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 0;
+    h1 {
+        color: white;
+        font-size: 16px;
+    }
+
+    @media (max-width: 968px) {
+        display: none;
+    }
+}
+.background {
+    background: #1B6392;
+}
+.TopBar_items {
+    gap: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    list-style: none;
+
+    span {
+        color: white;
+    }
+
+    li {
+        max-width: 16px;
+        max-height: 16px;
+    }
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}

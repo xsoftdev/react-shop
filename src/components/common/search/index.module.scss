@@ -1,0 +1,37 @@
+.Box {
+    position: relative; /* Исправлено на position: relative; */
+
+    input {
+        width: 100%;
+        min-width: 590px;
+
+        padding: 12px 24px;
+
+        border: 1px solid #E4E7E9;
+        border-radius: 2px;
+
+        font-size: 16px;
+        color: #77878F;
+        background: #F5F5F5;
+
+        @media (max-width: 1200px) {
+            min-width: 320px;
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    svg {
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        @media (max-width: 768px) {
+            position: unset;
+            transform: unset;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
