@@ -31,6 +31,9 @@ const Footer = () => {
                     </ul>
                     <ul className={s.footer_list}>
                         <span className={s.footer_list_title}>Контакти</span>
+                        <li><a href="tel:0504614555">0504614555</a></li>
+                        <li><a href="tel:0503370939">0503370939</a></li>
+                        <li><a href="tel:0952807480">0952807480</a></li>
                         <li><a href="tel:(0472)66-66-18">
                             (0472)66-66-18</a></li>
                         <li><a href="tel:(0472)65-47-07">
